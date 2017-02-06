@@ -47,6 +47,4 @@ void FAnimNode_DynamicSubInstance::PreUpdate(const UAnimInstance* InAnimInstance
 
 void FAnimNode_DynamicSubInstance::RootInitialize(const FAnimInstanceProxy* InProxy)
 {
-	int32 I = InProxy->GetSkelMeshComponent()->SubInstances.Num();
-	InstanceToRun = nullptr;
 }
