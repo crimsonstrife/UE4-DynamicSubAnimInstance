@@ -1,0 +1,5 @@
+#include "ModuleManager.h"
+#include "Engine.h"
+#include "AnimGraphDefinitions.h"
+#include "Kismet2/BlueprintEditorUtils.h"
+#include "UnrealEd.h"
