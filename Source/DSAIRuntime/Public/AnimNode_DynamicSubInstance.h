@@ -15,5 +15,5 @@ struct DSAIRUNTIME_API FAnimNode_DynamicSubInstance : public FAnimNode_SubInstan
 		void Teardown(const UAnimInstance* InAnimInstance);
 		void Reinitialize(const UAnimInstance* InAnimInstance);
 		virtual void PreUpdate(const UAnimInstance* InAnimInstance) override;
-		virtual void RootInitialize(const FAnimInstanceProxy* InProxy) override;
+		virtual void RootInitialize(const FAnimInstanceProxy* InProxy) override {}
 };

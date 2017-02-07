@@ -44,7 +44,3 @@ void FAnimNode_DynamicSubInstance::PreUpdate(const UAnimInstance* InAnimInstance
 		Teardown(InAnimInstance);
 	}
 }
-
-void FAnimNode_DynamicSubInstance::RootInitialize(const FAnimInstanceProxy* InProxy)
-{
-}
