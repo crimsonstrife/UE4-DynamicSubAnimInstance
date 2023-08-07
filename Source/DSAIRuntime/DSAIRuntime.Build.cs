@@ -1,15 +1,18 @@
 // Copyright 1998-2016 Epic Games, Inc. All Rights Reserved.
 
 using UnrealBuildTool;
+using System.IO;
 
 public class DSAIRuntime : ModuleRules
 {
-	public DSAIRuntime(TargetInfo Target)
+	public DSAIRuntime(ReadOnlyTargetRules Target) : base(Target)
 	{
-		
-		PublicIncludePaths.AddRange(
+        PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+
+        PublicIncludePaths.AddRange(
 			new string[] {
-                "DSAIRuntime/Public"
+                // "DSAIRuntime/Public"
+                Path.Combine(ModuleDirectory, "Public")
 				// ... add public include paths required here ...
 			}
 			);
@@ -17,7 +20,8 @@ public class DSAIRuntime : ModuleRules
 		
 		PrivateIncludePaths.AddRange(
 			new string[] {
-                "DSAIRuntime/Private",
+                // "DSAIRuntime/Private",
+                Path.Combine(ModuleDirectory, "Private")
 				// ... add other private include paths required here ...
 			}
 			);
